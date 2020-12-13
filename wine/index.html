@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Neema Samawi</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/lzl8jvb.css">
+	<link rel="icon" href="../images/icon-small.png"/> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--<header>
+		<h1>Neema Samawi</h1>
+		<h5>Big fan of keyboards and 0.5mm mechanical pencils.</h5>
+	</header>-->
+	<main>
+		<aside class="sidenav">
+			<a href="../index.html"/>
+				<img src="../images/icon_circle-01.png" height="70px" id="profile"/>
+			</a>
+			<div class="sidebar-links">
+				<a id="illustration-link" href="../index.html#illustration">Illustration</a>
+				<a id="drawing-link" href="../index.html#drawing">Drawing</a>
+				<a id="painting-link" href="../index.html#painting">Painting</a>
+				<a href="#">About</a>
+			</div>
+		</aside>
+		<section id="painting">
+			<h2>Wine</h2>
+			<div class="painting-grid">
+				<figure class="grid-item">
+					<img class="myImg" src="../images/wine_1.jpg" height="450px"/>
+					<figcaption>
+						<art-title>Wine #1</art-title>
+						<br>
+						<i>Acrylic on canvas</i>
+						<br>
+						<i>2016</i>
+					</figcaption>
+				</figure>
+				<figure class="grid-item">
+					<img class="myImg" src="../images/wine_2.jpg" height="450px"/>
+					<figcaption>
+						<art-title>Wine #2</art-title>
+						<br>
+						<i>Acrylic on canvas</i>
+						<br>
+						<i>2017</i>
+					</figcaption>
+				</figure>
+				<figure class="grid-item">
+					<img class="myImg" src="../images/wine_3.jpg" height="450px"/>
+					<figcaption>
+						<art-title>Wine #3</art-title>
+						<br>
+						<i>Acrylic on canvas</i>
+						<br>
+						<i>2019</i>
+					</figcaption>
+				</figure>
+			</div>
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>
+		</section>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = $(".myImg")
+		var modalImg = $("#img01")
+		var captionText = document.getElementById("caption");
+		$(".myImg").click(function(){
+			modal.style.display = "block";
+		    var newSrc = this.src;
+		    modalImg.attr('src', newSrc);
+		    captionText.innerHTML = this.alt;
+		});
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+	</script>
+</body>
+</html>
