@@ -11,6 +11,7 @@ html{
 body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Jost', sans-serif;
 }
 
 header{
@@ -52,7 +53,11 @@ h2{
 	/*background-color: #818181;*/
 }
 
-h5{
+header h2 {
+	left: 0;
+}
+
+h5 {
 	font-weight: 200;
 	line-height:100%;
 	font-size:22px;
@@ -60,7 +65,7 @@ h5{
 	padding:0;
 }
 
-figure{
+figure {
 	position: relative;
 	margin:0;
 	padding:0;
@@ -70,11 +75,27 @@ figure{
 	font-weight: 300;
 }
 
-art-title{
+art-title {
 	position: relative;
 	font-weight: 400;
 }
- 
+
+p a {
+	color: lightpink;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+p a:hover {
+	color: mistyrose;
+}
+
+link-style{
+	color: lightpink;
+	font-weight: 500;
+	text-decoration: none;
+}
+
 .sidenav {
 	font-family: 'Jost', sans-serif;
 	height: 100%; /* 100% Full-height */
@@ -116,8 +137,7 @@ art-title{
 	position: relative;
 	max-width: 1240px;
 	max-height: 620px;
-	left: 150px;
-	/*background-color: #818181;*/
+	padding-left: 150px;
 }
 
 .section-grid {
@@ -129,7 +149,7 @@ art-title{
 	position: relative;
 	max-width: 1240px;
 	max-height: 620px;
-	left: 150px;
+	padding-left: 150px;
 	/*background-color: #818181;*/
 }
 
@@ -142,7 +162,7 @@ art-title{
 	position: relative;
 	max-width: 1240px;
 	max-height: 620px;
-	left: 150px;
+	padding-left: 150px;
 	/*background-color: #818181;*/
 }
 
@@ -187,8 +207,26 @@ art-title{
 	left: 150px;
 }
 
+.single-image-grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1;
+	column-gap: 40px;
+	grid-row-gap: 20px;
+	position: relative;
+	max-width: 1240px;
+	max-height: 620px;
+	left: 150px;
+	/*background-color: #818181;*/
+}
+
 .grid-item:hover .cover {
 	opacity: 0.2;
+}
+
+.grid-item p {
+	padding: 0;
+	margin: 0;
 }
 
 .grid-item:hover .light {
@@ -220,13 +258,6 @@ art-title{
 .grid-item {
 	/*border: 5px solid black;*/
 	position: relative;
-}
-
-.main-covers{
-	display: block;
-	/*background: mistyrose;*/
-	position: relative;
-	height: 700px;
 }
 
 .title {
@@ -335,6 +366,21 @@ art-title{
 	opacity: 0.6;
 }
 
+.scroll-container {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+#main-covers{
+	display: block;
+	/*background: mistyrose;*/
+	position: relative;
+	height: 700px;
+	height: 100vh;
+	scroll-snap-align: start;
+}
+
 #illustration {
 	top: 0px;
 	height: 800px;
@@ -342,6 +388,8 @@ art-title{
 	display: block;
 	background-color: seashell;
 	position: relative;
+	height: 100vh;
+	scroll-snap-align: start;
 }
 
 #drawing {
@@ -351,6 +399,8 @@ art-title{
 	display: block;
 	background-color: ghostwhite;
 	position: relative;
+	height: 100vh;
+	scroll-snap-align: start;
 }
 
 #drawing h2{
@@ -364,7 +414,8 @@ art-title{
 	width: 100%;
 	display: block;
 	background-color: floralwhite;
-	position: relative;
+	height: 100vh;
+	scroll-snap-align: start;
 }
 
 #painting h2{
@@ -388,15 +439,26 @@ art-title{
 	opacity:0.6;
 }
 
+#photo {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about-me {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	color: dimgrey;
+	margin-top: 30px;
+}
+
+
 
 .content-wrap {
 	margin: 0 auto;
 	padding: 20px 150px;
 }
-
-
-
-
-
-
-
