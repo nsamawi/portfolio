@@ -146,6 +146,7 @@ link-style{
 	max-width: 1240px;
 	max-height: 620px;
 	padding-left: 150px;
+	width: 100vw;
 }
 
 .section-grid {
@@ -158,6 +159,7 @@ link-style{
 	max-width: 1240px;
 	max-height: 620px;
 	padding-left: 150px;
+	width: 100vw;
 	/*background-color: #818181;*/
 }
 
@@ -171,6 +173,7 @@ link-style{
 	max-width: 1240px;
 	max-height: 620px;
 	padding-left: 150px;
+	width: 100vw;
 	/*background-color: #818181;*/
 }
 
@@ -219,6 +222,32 @@ link-style{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: 1;
+	column-gap: 40px;
+	grid-row-gap: 20px;
+	position: relative;
+	max-width: 1240px;
+	max-height: 620px;
+	left: 150px;
+	/*background-color: #818181;*/
+}
+
+.large-image-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1;
+	column-gap: 40px;
+	grid-row-gap: 20px;
+	position: relative;
+	max-width: 1240px;
+	max-height: 620px;
+	left: 150px;
+	/*background-color: #818181;*/
+}
+
+.double-image-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	column-gap: 40px;
 	grid-row-gap: 20px;
 	position: relative;
@@ -398,6 +427,43 @@ link-style{
 	position: relative;
 	height: 100vh;
 	scroll-snap-align: start;
+}
+
+#comic {
+	top: 0px;
+	width: 100%;
+	display: block;
+	background-color: seashell;
+	position: relative;
+	height: 180vh;
+	scroll-snap-align: start;
+}
+
+#packaging {
+	top: 0px;
+	width: 100%;
+	display: block;
+	background-color: seashell;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 210vh;
+	scroll-snap-align: start;
+}
+
+#floral-background {
+	background-image: url("../images/floral.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  opacity: 0.03;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+	height: 210vh;
 }
 
 #drawing {

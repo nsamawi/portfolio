@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neema Samawi</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="https://use.typekit.net/lzl8jvb.css">
+  <link rel="icon" href="../images/icon_circle-01.png"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <aside class="sidenav">
+      <a href="../"/><img src="../images/icon_circle-01.png" height="70px" id="profile"/></a>
+      <div class="sidebar-links">
+        <a id="illustration-link" href="../#illustration">Illustration</a>
+        <a id="drawing-link" href="../#drawing">Drawing</a>
+        <a id="painting-link" href="../#painting">Painting</a>
+        <a href="../about">About</a>
+      </div>
+    </aside>
+    <section id="comic">
+      <h2>South 40 Map</h2>
+      <div class="double-image-grid">
+        <figure class="grid-item">
+          <img class="myImg" src="../images/south40-map.jpg" height="550px"/>
+          <figcaption>
+            <art-title>South 40 Map</art-title>
+            <br>
+            <i>Pencil, Illustrator, Photoshop</i>
+            <br>
+            <i>2019</i>
+          </figcaption>
+        </figure>
+        <article class="grid-item">
+          <p class="description">
+            The residential campus for first-years and sophomores at Washington University in St. Louis  <br/>
+            is basically Disney World. The buildings are all clustered together a mere 40 acres south of the main campus, making
+            it super convenient for students to visit each other's rooms or spend late nights studying together in the
+            dining hall.
+            <br/>
+            <br/>
+            Though students tend to familiarize themselves with the South 40 within a matter of days,
+            it can be tough for visitors or incoming first-years to find their way around the different buildings
+            because – well, they all pretty much look the same. And for the longest time, we didn't have any good
+            maps of the area. I created this illustrated map for the Office of Residential Life to solve this problem.
+            <br/>
+            <br/>
+            While the aerial view makes it easy to navigate <br/> the South 40's layout, the slight angle hints at
+            just enough detail to help the viewer orient themselves. My tendency toward clean lines and pleasing
+            colors felt particularly suited to portraying the idyllic, charming nature of the campus, and I
+            opted to handwrite all of the text for visual cohesion.
+          </p>
+        </article>
+        <figure class="grid-item">
+          <img class="myImg" src="../images/move-in-map.jpg" height="550px"/>
+          <figcaption>
+            <art-title>Move-In Map</art-title>
+            <br>
+            <i>Pencil, Illustrator, Photoshop</i>
+            <br>
+            <i>2019</i>
+          </figcaption>
+        </figure>
+        <div class="grid-item">
+          <p class="description">
+            In 2019, Fall Move-In was expected to be a lot more hectic than usual, with more students moving in at
+            the same time than any year before. To make the process as smooth as possible, I created this Move-In
+            Map highlighting exactly where to park and how to get there. (This was important as they were reversing
+            the direction of one of the roads for that day only!) These maps were included in the move-in guide
+            as a resource to the hundreds of first-year students and their families.
+          </p>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = $(".myImg")
+  var modalImg = $("#img01")
+  var captionText = document.getElementById("caption");
+  $(".myImg").click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+  });
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  </script>
+</body>
+</html>

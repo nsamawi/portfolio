@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Neema Samawi</title>
+  	<link rel="stylesheet" href="../css/style.css" type="text/css"/>
+  	<link rel="stylesheet" href="https://use.typekit.net/lzl8jvb.css">
+  	<link rel="icon" href="../images/icon_circle-01.png"/>
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <aside class="sidenav">
+        <a href="../"/><img src="../images/icon_circle-01.png" height="70px" id="profile"/></a>
+        <div class="sidebar-links">
+          <a id="illustration-link" href="../#illustration">Illustration</a>
+          <a id="drawing-link" href="../#drawing">Drawing</a>
+          <a id="painting-link" href="../#painting">Painting</a>
+          <a href="../about">About</a>
+        </div>
+      </aside>
+      <section id="comic">
+        <h2>Finding Neema</h2>
+        <div class="large-image-grid">
+          <figure class="grid-item">
+            <img class="myImg" src="../images/finding_neema.jpg" height="1200px"/>
+            <figcaption>
+              <art-title>Finding Neema</art-title>
+              <br>
+              <i>Pen, Photoshop</i>
+              <br>
+              <i>2016</i>
+            </figcaption>
+          </figure>
+          <div class="grid-item">
+            <p class="description">
+              Create an autobiographical comic of your most embarrassing moment: this was the prompt for
+              a final assignment in one of my Design classes. While I've had my fair share of embarrassing moments, and while
+              this was probably not the <em>worst</em> one, I instantly thought back to a field trip for an art class I took
+              senior year of high school, when we visited the nearest state park during the peak of autumn to spend the
+              day painting <i>en plein air</i>.
+              <br/>
+              <br/>
+              Though we were specifically instructed NOT to go off on our own, and though I have a terrible sense of
+              direction and, at that time, a potato for a phone and absolutely no cell service in the park, I was so
+              captivated by this gentle waterfall running underneath a bridge that I insisted on sitting there and painting
+              all by myself. Spoiler alert: every single person on that field trip waited on the bus a little
+              too long and got home a little too late, all thanks to me.
+              <br/>
+              <br/>
+              This comic was wildly fun to make – illustrating my classmates and teachers as shrunk-down characters,
+              communicating what happened through dialogue and storyboarding, reflecting the fall color scheme through
+              a limited palette of oranges, yellows, and greens. I even recreated the scene I painted (see below) in
+              several of the frames. Honestly, getting lost was kind of worth it.
+          </p>
+          <br/>
+          <img src="../images/waterfall.jpg" height="760px"/>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = $(".myImg")
+      var modalImg = $("#img01")
+      var captionText = document.getElementById("caption");
+      $(".myImg").click(function(){
+        modal.style.display = "block";
+          var newSrc = this.src;
+          modalImg.attr('src', newSrc);
+          captionText.innerHTML = this.alt;
+      });
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
