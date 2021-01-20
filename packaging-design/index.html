@@ -27,51 +27,53 @@
         <!--Placeholder for background image-->
       </div>
 			<h2>Packaging Design</h2>
-			<div class="bloom-grid">
-				<figure class="grid-item">
-					<img class="myImg" src="../images/packaging-1.jpg" height="450px"/>
-					<figcaption>
-						<art-title>Vitamin A Packaging Design</art-title>
-						<br>
-						<i>Pencil, Illustrator, Photoshop, InDesign</i>
-						<br>
-						<i>2017</i>
-					</figcaption>
-				</figure>
-				<figure class="grid-item">
-					<img class="myImg" src="../images/packaging-2.jpg" height="450px"/>
-				</figure>
-				<figure class="grid-item">
-					<img class="myImg" src="../images/packaging-3.jpg" height="450px"/>
-				</figure>
+			<div class="viewport-container">
+				<div class="grid-container three-by-three-grid">
+					<figure class="grid-item">
+						<img class="myImg cover three-by-four" src="../images/packaging-1.jpg"/>
+						<figcaption>
+							<art-title>Vitamin A Packaging Design</art-title>
+							<br>
+							<i>Pencil, Illustrator, Photoshop, InDesign</i>
+							<br>
+							<i>2017</i>
+						</figcaption>
+					</figure>
+					<figure class="grid-item">
+						<img class="myImg cover three-by-four" src="../images/packaging-2.jpg"/>
+					</figure>
+					<figure class="grid-item">
+						<img class="myImg cover three-by-four" src="../images/packaging-3.jpg"/>
+					</figure>
+				</div>
+				<p class="description">
+					Vitamin labels are often not the most aesthetically pleasing. And why would they need to be? A 30-billion-dollar
+	        industry, vitamins and supplements will continue to be in high demand for as long as consumers continue to seek
+	        quick-fixes to meet their nutritional needs. Challenged with the task of coming up with a design for a brand of Vitamin A
+	        – which, by the way, most Americans are highly unlikely to even be deficient in – I combined vintage imagery with the
+	        modern-feeling Futura typeface, appealing to younger audiences who may be less concerned with their long-term health
+	        but easily lured by pretty packaging.
+				</p>
 			</div>
-			<p class="description">
-				Vitamin labels are often not the most aesthetically pleasing. And why would they need to be? A 30-billion-dollar
-        industry, vitamins and supplements will continue to be in high demand for as long as consumers continue to seek
-        quick-fixes to meet their nutritional needs. Challenged with the task of coming up with a design for a brand of Vitamin A
-        – which, by the way, most Americans are highly unlikely to even be deficient in – I combined vintage imagery with the
-        modern-feeling Futura typeface, appealing to younger audiences who may be less concerned with their long-term health
-        but easily lured by pretty packaging.
-			</p>
-      <br/>
-      <br/>
-      <div class="large-image-grid">
-        <figure class="grid-item">
-          <img class="myImg" src="../images/packaging.png" height="800px"/>
-        </figure>
-        <div class="grid-item">
-          <br/>
-          <br/>
-          <br/>
-          <p class="description">
-            Most supplements come inside bottles or boxes where the key benefits, dosages, and directions
-            are buried in between lines and lines of information. Here, each side of the package clearly states the
-            high-level facts that a consumer would need to know about why they should take the product and how to safely
-            do so. The sans-serif text and solid alternating colors provide a clean backdrop for the illustrative details
-            to shine through.
-          </p>
-        </div>
-      </div>
+			<div class="viewport-container">
+	      <div class="grid-container large-image-grid">
+	        <figure class="grid-item">
+	          <img class="myImg cover extra-tall" src="../images/packaging.png"/>
+	        </figure>
+	        <div class="grid-item">
+	          <br/>
+	          <br/>
+	          <br/>
+	          <p class="description">
+	            Most supplements come inside bottles or boxes where the key benefits, dosages, and directions
+	            are buried in between lines and lines of information. Here, each side of the package clearly states the
+	            high-level facts that a consumer would need to know about why they should take the product and how to safely
+	            do so. The sans-serif text and solid alternating colors provide a clean backdrop for the illustrative details
+	            to shine through.
+	          </p>
+	        </div>
+      	</div>
+			</div>
 			<div id="myModal" class="modal">
 			  <span class="close">&times;</span>
 			  <img class="modal-content" id="img01">
@@ -80,28 +82,6 @@
 		</section>
 	</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		// Get the modal
-		var modal = document.getElementById("myModal");
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = $(".myImg")
-		var modalImg = $("#img01")
-		var captionText = document.getElementById("caption");
-		$(".myImg").click(function(){
-			modal.style.display = "block";
-		    var newSrc = this.src;
-		    modalImg.attr('src', newSrc);
-		    captionText.innerHTML = this.alt;
-		});
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		  modal.style.display = "none";
-		}
-	</script>
+	<script src="../JS/script.js"></script>
 </body>
 </html>

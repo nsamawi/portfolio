@@ -20,11 +20,11 @@
         <a href="../about">About</a>
       </div>
     </aside>
-    <section id="comic">
+    <section id="long-page">
       <h2>South 40 Map</h2>
-      <div class="double-image-grid">
+      <div class="grid-container double193203-image-grid">
         <figure class="grid-item">
-          <img class="myImg" src="../images/south40-map.jpg" height="550px"/>
+          <img class="myImg cover full-height" src="../images/south40-map.jpg"/>
           <figcaption>
             <art-title>South 40 Map</art-title>
             <br>
@@ -54,7 +54,7 @@
           </p>
         </article>
         <figure class="grid-item">
-          <img class="myImg" src="../images/move-in-map.jpg" height="550px"/>
+          <img class="myImg cover full-height" src="../images/move-in-map.jpg"/>
           <figcaption>
             <art-title>Move-In Map</art-title>
             <br>
@@ -81,28 +81,6 @@
     </section>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = $(".myImg")
-  var modalImg = $("#img01")
-  var captionText = document.getElementById("caption");
-  $(".myImg").click(function(){
-    modal.style.display = "block";
-    var newSrc = this.src;
-    modalImg.attr('src', newSrc);
-    captionText.innerHTML = this.alt;
-  });
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  </script>
+  <script src="../JS/script.js"></script>
 </body>
 </html>
