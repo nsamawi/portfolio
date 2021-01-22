@@ -587,6 +587,10 @@ link-style{
 	color: rosybrown;
 }
 
+#profile{
+	height: 70px;
+}
+
 #profile:hover{
 	/*transition: .5s ease;*/
 	opacity:0.6;
@@ -597,6 +601,7 @@ link-style{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	height: 250px;
 }
 
 #about-me-page {
@@ -744,6 +749,10 @@ link-style{
 		font-size:50px;
 	}
 
+	h2{
+		font-size:40px;
+	}
+
 	header{
 		text-align: left;
 		padding-left: 150px;
@@ -755,6 +764,17 @@ link-style{
 
 	.sidenav {
 		position: fixed;
+	}
+
+	#profile {
+			height: 70px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+	}
+
+	.main {
+		width: 100vw;
+		max-width: 425px;
 	}
 
 	.sidebar-links a {
@@ -793,7 +813,7 @@ link-style{
 
 	.glow-grid {
 		grid-template-columns: (minmax(100px, 1fr));
-		grid-template-rows: minmax(100px, 1fr) repeat(2,minmax(100px, 1.5fr));
+		grid-template-rows: minmax(100px, 1fr) repeat(2,minmax(150px, 1.5fr));
 		grid-gap: 20px;
 		width: 95vw;
 		max-height: 300vh;
@@ -851,7 +871,7 @@ link-style{
 	}
 
 	body {
-		max-width: 450px;
+		width: 100vw;
 	}
 
 	#main-covers{
@@ -859,19 +879,42 @@ link-style{
 	}
 
 	#illustration {
-		margin: 0;
-		padding: 0;
 		max-height: 800vh;
 		width: 100vw;
+		max-width: 425px;
 	}
 
 	#drawing {
 		max-height: 200vh;
 		width: 100vw;
+		max-width: 425px;
 	}
 
 	#painting {
 		width: 100vw;
+	}
+
+	#photo {
+		height: 175px;
+	}
+
+	#about-header {
+		text-align: center;
+		margin:0;
+		padding:0;
+		width: 100%;
+	}
+
+	#about-me {
+		position: relative;
+		display: block;
+		padding-left: 100px;
+		margin: 0;
+		width: 88%;
+		font-size: 15px;
+		padding-bottom: 30px;
+		color: dimgrey;
+		margin-top: 30px;
 	}
 
 	header{
