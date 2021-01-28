@@ -742,6 +742,15 @@ link-style{
 	header{
 		text-align: center;
 	}
+
+	.text, .text-black, .text-grey {
+		font-size: 22px;
+	}
+
+	.text-dramatic {
+		font-size: 20px;
+	}
+
 }
 
 @media (max-width: 650px) {
@@ -792,6 +801,7 @@ link-style{
 		padding-left: 100px;
 		padding-top: 0;
 		padding-right: 0;
+		min-height: 100vh;
 	}
 
 	.squares {
