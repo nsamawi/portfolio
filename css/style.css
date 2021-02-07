@@ -39,7 +39,7 @@ h2{
 	padding:0;
 	padding-left: 150px;
 	position: relative;
-	color: lightpink;
+	color: #E0001E;
 	width: 100%;
 }
 
@@ -67,17 +67,17 @@ art-title {
 }
 
 p a {
-	color: lightpink;
+	color: #AD0017;
 	font-weight: 500;
 	text-decoration: none;
 }
 
 p a:hover {
-	color: mistyrose;
+	color: lightpink;
 }
 
 link-style{
-	color: lightpink;
+	color: #AD0017;
 	font-weight: 500;
 	text-decoration: none;
 }
@@ -111,7 +111,7 @@ link-style{
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .description {
@@ -542,12 +542,12 @@ link-style{
 }
 
 .drawing h2{
-	color: lightskyblue;
+	color: #0975B9;
 	/*background-color: #818181;*/
 }
 
 #drawing h2{
-	color: lightskyblue;
+	color: #0975B9;
 	/*background-color: #818181;*/
 }
 
@@ -568,23 +568,23 @@ link-style{
 }
 
 #painting h2{
-	color: rosybrown;
+	color: #A16363;
 }
 
 .painting h2{
-	color: rosybrown;
+	color: #A16363;
 }
 
 #illustration-link:hover{
-	color: lightpink;
+	color: #AD0017;
 }
 
 #drawing-link:hover{
-	color: lightskyblue;
+	color: #065789;
 }
 
 #painting-link:hover{
-	color: rosybrown;
+	color: #794949;
 }
 
 #profile{
@@ -943,4 +943,46 @@ link-style{
 		padding-left: 100px;
 		width: 100%;
 	}
+}
+
+
+@media (max-height: 425px) {
+
+	.img-description-container {
+		max-height: 250vh;
+		max-width: 425px;
+		padding: 0px;
+		margin-right: 0px;
+	}
+
+	.description-float {
+		width: 100%;
+	}
+
+	.single-figure {
+		width: 40%;
+	}
+
+	.main {
+		max-height: 300vh;
+	}
+
+	.large-image-grid {
+		grid-template-rows: minmax(190px, 0.9fr) minmax(200px, 1fr);
+		grid-template-columns: minmax(200px, 1fr);
+		max-height: 600vh;
+	}
+
+	.glow-grid {
+		max-height: 250vh;
+	}
+
+	.sidenav {
+		max-height: 100vh;
+	}
+
+	.drawing {
+		min-height: 100vh;
+	}
+
 }
