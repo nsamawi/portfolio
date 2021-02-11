@@ -163,7 +163,7 @@ link-style{
 
 .painting-grid {
 	grid-template-columns: repeat(3, minmax(100px, 1fr));
-	grid-template-rows: minmax(100px, 1fr);
+	grid-template-rows: minmax(250px, 1fr);
 	grid-column-gap: 95px;
 	max-height: 90vh;
 	padding-bottom: 25px;
@@ -647,6 +647,33 @@ link-style{
 	padding: 20px 150px;
 }
 
+@media (min-height: 1000px) {
+	#main-covers{
+		margin: 0 auto;
+	}
+
+	h2{
+		font-size: 75px;
+		text-align: center;
+		padding-left: 0;
+		padding-top: 25px;
+	}
+
+	.grid-container {
+		max-height: 1600px;
+		max-width: 1600px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20vh;
+	}
+
+	.painting-grid {
+		min-height: 100%;
+		padding-bottom: 0;
+	}
+
+}
+
 @media (max-width: 1000px) {
 	.grid-container {
 		grid-template-columns: repeat(2, minmax(100px, 1fr));
@@ -986,3 +1013,47 @@ link-style{
 	}
 
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+		.img-description-container {
+			max-height: 250vh;
+			max-width: 425px;
+			padding: 0px;
+			margin-right: 0px;
+		}
+
+		.description-float {
+			width: 100%;
+		}
+
+		.single-figure {
+			width: 40%;
+		}
+
+		.main {
+			max-height: 300vh;
+		}
+
+		.large-image-grid {
+			grid-template-rows: minmax(190px, 0.9fr) minmax(200px, 1fr);
+			grid-template-columns: minmax(200px, 1fr);
+			max-height: 600vh;
+		}
+
+		.glow-grid {
+			max-height: 250vh;
+		}
+
+		.sidenav {
+			max-height: 100vh;
+		}
+
+		.drawing {
+			min-height: 100vh;
+		}
+
+	}
