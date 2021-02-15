@@ -1196,6 +1196,12 @@ link-style{
 		grid-template-rows: repeat(2, minmax(100px, 1fr));
 	}
 
+	.large-image-grid {
+		grid-template-rows: minmax(240px, 2.4fr) minmax(220px, 2.2fr);
+		grid-template-columns: minmax(200px, 1fr);
+		max-height: 800vh;
+	}
+
 }
 
 @media (max-width: 425px) {
