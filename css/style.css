@@ -98,6 +98,28 @@ link-style{
 	/*transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  color: #818181;
+  text-align: center;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.photo-caption {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.photo-caption a {
+	color: #AD0017;
+	font-weight: 500;
+	text-decoration: none;
+}
+
 .sidebar-links a {
   /*padding: 1px 1px 1px 32px;*/
   text-decoration: none;
@@ -396,6 +418,10 @@ link-style{
   cursor: pointer;
 }
 
+.myImg:hover {
+	opacity: 0.2;
+}
+
 /*
 .text {
   background-color: #4CAF50;
@@ -633,12 +659,12 @@ link-style{
 }
 
 .viewport-container {
-	min-height: 100vh;
+	min-height: 85vh;
 	position: relative;
 }
 
 .viewport-section-2 {
-	max-height: 100vh;
+	min-height: 90vh;
 	position: relative;
 }
 
@@ -667,9 +693,38 @@ link-style{
 		margin-top: 20vh;
 	}
 
+	.large-image-grid {
+		margin-top: 30px;
+		max-height: 2400px;
+	}
+
+	.double-image-grid {
+		margin-top: 30px;
+	}
+
+	.overflow-height {
+		max-height: 2400px;
+	}
+
+	.tall-height{
+		max-height: 880px;
+	}
+
 	.painting-grid {
 		min-height: 100%;
 		padding-bottom: 0;
+	}
+
+	.description {
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 20px;
+		width: 80%;
+		font-size: 16px;
+	}
+
+	.description-float {
+		font-size: 16px;
 	}
 
 }
@@ -902,6 +957,10 @@ link-style{
 		position: relative;
 	}
 
+	.illustration {
+		padding-bottom: 30px;
+	}
+
 
 	#img3{
 		grid-row-start: 3;
@@ -919,16 +978,19 @@ link-style{
 		max-height: 800vh;
 		width: 100vw;
 		max-width: 425px;
+		padding: 30px;
 	}
 
 	#drawing {
 		max-height: 200vh;
 		width: 100vw;
 		max-width: 425px;
+		padding: 30px;
 	}
 
 	#painting {
 		width: 100vw;
+		padding: 30px;
 	}
 
 	#photo {
@@ -1025,7 +1087,7 @@ link-style{
 
 	.glow-grid {
 		grid-template-columns: (minmax(100px, 1fr));
-		grid-template-rows: minmax(100px, 1fr) repeat(2,minmax(150px, 1.5fr));
+		grid-template-rows: minmax(120px, 1.2fr) minmax(100px, 1fr);
 		grid-gap: 20px;
 		width: 95vw;
 		max-height: 500vh;
@@ -1035,7 +1097,7 @@ link-style{
 	.three-by-three-grid {
 		max-height: 500vh;
 		grid-template-columns: (minmax(100px, 1fr));
-		grid-template-rows: repeat(3,minmax(150px, 1.5fr));
+		grid-template-rows: repeat(2,minmax(150px, 1.5fr));
 		width: 90vw;
 		height: auto;
 		object-fit: cover;
@@ -1077,11 +1139,14 @@ link-style{
 		max-height: 100vh;
 	}
 
-	.drawing {
+	.drawing, .painting, .illustration {
 		min-height: 100vh;
+		padding-bottom: 30px;
 	}
 
 }
+
+/*
 
 @media only screen
   and (min-device-width: 375px)
@@ -1132,3 +1197,5 @@ link-style{
 		}
 
 	}
+
+*/
