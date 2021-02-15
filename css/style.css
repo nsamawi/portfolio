@@ -923,7 +923,7 @@ link-style{
 	}
 
 	.double-image-grid {
-		grid-template-rows: minmax(75px, 0.75fr) minmax(250px, 2.5fr) minmax(75px, 0.75fr) minmax(100px, 1fr);
+		grid-template-rows: minmax(65px, 0.65fr) minmax(250px, 2.5fr) minmax(65px, 0.65fr) minmax(100px, 1fr);
 		grid-template-columns: minmax(100px, 1fr);
 		grid-gap: 20px;
 		max-height: 1000vh;
@@ -941,16 +941,26 @@ link-style{
 
 	.description-float {
 		padding-bottom: 30px;
+		margin-right: 0;
+		padding-right: 0;
+		max-width: 300px;
 	}
 
 	.single-figure {
 		float: none;
-		width: 60%;
+		width: 80%;
+		margin-right: 0;
+	}
+
+	.vote-page {
+		margin-right: 0;
 	}
 
 	.img-description-container{
 		margin-left: 100px;
 		max-height: 200vh;
+		margin-right: 0;
+		max-width: 70vw;
 	}
 
 	.viewport-section-2 {
