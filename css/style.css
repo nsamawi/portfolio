@@ -632,7 +632,7 @@ link-style{
 
 #about-me-page {
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #about-me {
@@ -643,6 +643,7 @@ link-style{
 	width: 50%;
 	color: dimgrey;
 	margin-top: 30px;
+	padding-bottom: 30px;
 }
 
 #about-header {
@@ -674,7 +675,7 @@ link-style{
 }
 
 @media (min-height: 1000px) {
-	#main-covers{
+	#main-covers {
 		margin: 0 auto;
 	}
 
@@ -1012,6 +1013,7 @@ link-style{
 		padding-bottom: 30px;
 		color: dimgrey;
 		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	header{
@@ -1113,10 +1115,10 @@ link-style{
 	}
 
 	.double-image-grid {
-		grid-template-rows: minmax(45px, 0.45fr) minmax(240px, 2.4fr) minmax(45px, 0.45fr) minmax(100px, 1fr);
+		grid-template-rows: minmax(100px, 1fr) minmax(270px, 2.7fr) minmax(100px, 1fr) minmax(100px, 1fr);
 		grid-template-columns: minmax(100px, 1fr);
 		grid-gap: 20px;
-		max-height: 800vh;
+		max-height: 1000vh;
 		padding-bottom: 50px;
 	}
 
@@ -1156,14 +1158,27 @@ link-style{
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px)
+	and (min-width: 426px){
 	.double-image-grid {
-		grid-template-rows: minmax(200px, 2fr) minmax(200px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr);
+		grid-template-rows: minmax(130px, 1.3fr) minmax(170px, 1.7fr) minmax(130px, 1.3fr) minmax(80px, 0.8fr);
 		grid-template-columns: minmax(100px, 1fr);
 		grid-gap: 20px;
 		width: 90vw;
 		max-height: 1200vh;
 		padding-bottom: 30px;
+	}
+
+	.glow-grid {
+		grid-template-columns: repeat(2, minmax(100px, 1fr));
+		grid-template-rows: minmax(100px, 1fr) minmax(90px, 0.9fr);
+		grid-gap: 20px;
+		max-height: 800vh;
+	}
+
+	.painting-grid {
+		grid-template-columns: repeat(2, minmax(100px, 1fr));
+		grid-template-rows: repeat(2, minmax(100px, 1fr));
 	}
 
 }
@@ -1173,6 +1188,10 @@ link-style{
 		grid-template-rows: minmax(100px, 1fr) minmax(230px, 2.3fr);
 		grid-template-columns: minmax(200px, 1fr);
 		max-height: 600vh;
+	}
+
+	h2 {
+		font-size: 30px;
 	}
 }
 
