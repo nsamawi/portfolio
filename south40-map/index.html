@@ -8,6 +8,11 @@
 	<link rel="icon" href="images/icon_circle-01.png"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+	<script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="../JS/picturefill.min.js" async></script>
 </head>
 <body>
   <main>
@@ -24,7 +29,13 @@
       <h2>South 40 Map</h2>
       <div class="grid-container double-image-grid clearfix">
         <figure class="grid-item">
-          <img class="myImg cover full-height" alt="" src="../images/south40-map.jpg"/>
+          <img class="myImg cover full-height"
+						alt=""
+						src="../images/south40-map.jpg"
+						srcset="../images/south40-map-small.png 600w,
+										../images/south40-map-medium.png 800w,
+										../images/south40-map-large.png 1200w,
+										../images/south40-map-extralarge.png 1600w"/>
           <figcaption>
             <art-title>South 40 Map</art-title>
             <br>
@@ -54,7 +65,13 @@
           </p>
         </article>
         <figure class="grid-item">
-          <img class="myImg cover full-height" alt="" src="../images/move-in-map.jpg"/>
+          <img class="myImg cover full-height"
+						alt=""
+						src="../images/move-in-map.jpg"
+						srcset="../images/move-in-map-small.png 600w,
+										../images/move-in-map-medium.png 800w,
+										../images/move-in-map-large.png 1200w,
+										../images/move-in-map-extralarge.png 1600w"/>
           <figcaption>
             <art-title>Move-In Map</art-title>
             <br>

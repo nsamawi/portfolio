@@ -89,13 +89,6 @@ link-style{
 	z-index: 1; /* Stay on top */
 	top: 20px; /* Stay at the top */
 	padding-left: 20px;
-	/*display: flex;
-	align-content: space-between;*/
-	/*float: left;*/
-	/*background-color: #111; /* Black*/
-	/*overflow-x: hidden; /* Disable horizontal scroll */
-	/*padding-top: 60px; /* Place content 60px from the top */
-	/*transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .footer {
@@ -421,15 +414,6 @@ link-style{
 .myImg:hover {
 	opacity: 0.2;
 }
-
-/*
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-*/
 
 /* The Close Button */
 .close {
@@ -1245,57 +1229,3 @@ link-style{
 		font-size: 30px;
 	}
 }
-
-/*
-
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-		.img-description-container {
-			max-height: 250vh;
-			max-width: 425px;
-			padding: 0px;
-			margin-right: 0px;
-		}
-
-		.description-float {
-			width: 100%;
-		}
-
-		.single-figure {
-			width: 40%;
-		}
-
-		.main {
-			max-height: 300vh;
-		}
-
-		.large-image-grid {
-			grid-template-rows: minmax(190px, 0.9fr) minmax(200px, 1fr);
-			grid-template-columns: minmax(200px, 1fr);
-			max-height: 600vh;
-		}
-
-		.glow-grid {
-			grid-template-columns: (minmax(100px, 1fr));
-			grid-template-rows: minmax(100px, 1fr) repeat(2,minmax(150px, 1.5fr));
-			grid-gap: 20px;
-			width: 95vw;
-			max-height: 300vh;
-			padding-bottom: 30px;
-			background-color: blue;
-		}
-
-		.sidenav {
-			max-height: 100vh;
-		}
-
-		.drawing {
-			min-height: 100vh;
-		}
-
-	}
-
-*/

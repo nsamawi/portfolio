@@ -8,6 +8,11 @@
 	<link rel="icon" href="../images/icon_circle-01.png"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+	<script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="../JS/picturefill.min.js" async></script>
 </head>
 <body>
 	<main>
@@ -26,7 +31,13 @@
 			<h2>Loss</h2>
 			<div class="grid-container loss-grid">
 				<figure class="grid-item">
-					<img class="myImg cover three-by-four" alt="" src="../images/you_were_my_home.jpg"/>
+					<img class="myImg cover three-by-four"
+						alt=""
+						src="../images/you_were_my_home.jpg"
+						srcset="../images/you_were_my_home-small.jpg 600w,
+										../images/you_were_my_home-medium.jpg 800w,
+										../images/you_were_my_home-large.jpg 1200w,
+										../images/you_were_my_home-extralarge.jpg 1600w"/>
 					<figcaption>
 						<art-title>You were my home, but you let our house burn down.</art-title>
 						<br>
@@ -36,7 +47,13 @@
 					</figcaption>
 				</figure>
 				<figure class="grid-item">
-					<img class="myImg cover three-by-four" alt="" src="../images/sorry_for_believing_in_you.jpg"/>
+					<img class="myImg cover three-by-four"
+						alt=""
+						src="../images/sorry_for_believing_in_you.jpg"
+						srcset="../images/sorry_for_believing_in_you-small.jpg 600w,
+										../images/sorry_for_believing_in_you-medium.jpg 800w,
+										../images/sorry_for_believing_in_you-large.jpg 1200w,
+										../images/sorry_for_believing_in_you-extralarge.jpg 1600w"/>
 					<figcaption>
 						<art-title>Sorry for believing in you.</art-title>
 						<br>
@@ -46,7 +63,13 @@
 					</figcaption>
 				</figure>
 				<figure class="grid-item">
-					<img class="myImg cover three-by-four" alt="" src="../images/i_thought_you_were_the_only_constant.jpg"/>
+					<img class="myImg cover three-by-four"
+						alt=""
+						src="../images/i_thought_you_were_the_only_constant.jpg"
+						srcset="../images/i_thought_you_were_the_only_constant-small.jpg 600w,
+										../images/i_thought_you_were_the_only_constant-medium.jpg 800w,
+										../images/i_thought_you_were_the_only_constant-large.jpg 1200w,
+										../images/i_thought_you_were_the_only_constant-extralarge.jpg 1600w"/>
 					<figcaption>
 						<art-title>I thought you were the only constant in my universe.</art-title>
 						<br>

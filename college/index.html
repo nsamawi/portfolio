@@ -8,6 +8,11 @@
 	<link rel="icon" href="../images/icon_circle-01.png"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+	<script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="../JS/picturefill.min.js" async></script>
 </head>
 <body>
 	<main>
@@ -26,7 +31,13 @@
 			<h2>College Posters</h2>
 			<div class="grid-container three-by-three-grid">
 				<figure class="grid-item">
-					<img class="myImg cover three-by-four" alt="" src="../images/making_the_grade.jpg"/>
+					<img class="myImg cover three-by-four"
+						alt=""
+						src="../images/making_the_grade.jpg"
+						srcset="../images/making_the_grade-small.png 600w,
+										../images/making_the_grade-medium.png 800w,
+										../images/making_the_grade-large.png 1200w,
+										../images/making_the_grade-extralarge.png 1600w"/>
 					<figcaption>
 						<art-title>Making the Grade</art-title>
 						<br>
@@ -36,7 +47,13 @@
 					</figcaption>
 				</figure>
 				<figure class="grid-item">
-					<img class="myImg cover three-by-four" alt="" src="../images/brookies_usofloats.jpg"/>
+					<img class="myImg cover three-by-four"
+						alt=""
+						src="../images/brookies_usofloats.jpg"
+						srcset="../images/brookies_usofloats-small.png 600w,
+										../images/brookies_usofloats-medium.png 800w,
+										../images/brookies_usofloats-large.png 1200w,
+										../images/brookies_usofloats-extralarge.png 1600w"/>
 					<figcaption>
 						<art-title>Brookies & Usofloats</art-title>
 						<br>
@@ -46,7 +63,13 @@
 					</figcaption>
 				</figure>
 				<figure class="grid-item">
-					<img class="myImg cover three-by-four" alt="" src="../images/breakfast_for_dinner.jpg"/>
+					<img class="myImg cover three-by-four"
+						alt=""
+						src="../images/breakfast_for_dinner.jpg"
+						srcset="../images/breakfast_for_dinner-small.png 600w,
+										../images/breakfast_for_dinner-medium.png 800w,
+										../images/breakfast_for_dinner-large.png 1200w,
+										../images/breakfast_for_dinner-extralarge.png 1600w"/>
 					<figcaption>
 						<art-title>Breakfast for Dinner</art-title>
 						<br>
