@@ -1180,6 +1180,10 @@ link-style{
 		max-height: 600vh;
 	}
 
+	.comic-grid {
+		grid-template-rows: minmax(80px, 0.8fr) minmax(220px, 2.2fr)
+	}
+
 	.viewport-section-2 {
 		max-height: 400vh;
 	}
@@ -1202,6 +1206,12 @@ link-style{
 		min-height: 100vh;
 		max-height: 800vh;
 		padding-bottom: 30px;
+	}
+
+	h2{
+		font-size:30px;
+		padding-left: 100px;
+		width: 100%;
 	}
 
 }
@@ -1283,7 +1293,7 @@ link-style{
 	}
 
 	.comic-grid {
-		grid-template-rows: minmax(90px, 0.9fr) minmax(230px, 2.3fr);
+		grid-template-rows: minmax(100px, 1fr) minmax(230px, 2.3fr);
 	}
 
 	h2 {
