@@ -269,7 +269,7 @@ link-style{
 	grid-column-gap: 40px;
 	grid-row-gap: 20px;
 	max-height: 400vh;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 .double-image-grid {
@@ -300,7 +300,8 @@ link-style{
 	max-height: 550px;
 	width: 100%;
 	height: auto;
-	object-fit: cover;
+	object-fit: contain;
+	object-position: left;
 }
 
 .tall-height {
@@ -308,6 +309,7 @@ link-style{
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+	margin-top: 90px;
 }
 
 .extra-tall {
@@ -694,6 +696,7 @@ link-style{
 
 	.tall-height{
 		max-height: 880px;
+		margin-top: 110px;
 	}
 
 	.painting-grid {
@@ -774,6 +777,7 @@ link-style{
 	.large-image-grid {
 		grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
 		grid-template-rows: minmax(100px, 1fr);
+		padding-bottom: 50px;
 	}
 
 	.single-image-grid {
@@ -782,6 +786,10 @@ link-style{
 
 	.full-height {
 		float: left;
+	}
+
+	.tall-height{
+		margin-top: 20px;
 	}
 
 	#img1{
@@ -817,6 +825,15 @@ link-style{
 		font-size: 20px;
 	}
 
+}
+
+@media (max-height: 800px) {
+	.double-image-grid {
+	    grid-template-rows: minmax(140px, 1.4fr) minmax(100px, 1fr) minmax(140px, 1.4fr) minmax(40px, 0.4fr);
+	    grid-template-columns: minmax(100px, 1fr);
+	    grid-gap: 20px;
+	    max-height: 400vh;
+	    padding-bottom: 30px;
 }
 
 @media (max-width: 650px) {
@@ -917,6 +934,11 @@ link-style{
 		grid-template-columns: minmax(100px, 1fr);
 	}
 
+	.comic-grid {
+		grid-template-rows: minmax(100px, 1fr) minmax(230px, 2.3fr);
+		padding-bottom: 50px;
+	}
+
 	.description {
 		padding-left: 100px;
 	}
@@ -948,6 +970,7 @@ link-style{
 	.viewport-section-2 {
 		max-height: 500vh;
 		position: relative;
+		padding-bottom: 50px;
 	}
 
 	.illustration, .drawing {
@@ -1003,10 +1026,9 @@ link-style{
 		margin: 0;
 		width: 88%;
 		font-size: 15px;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 		color: dimgrey;
 		margin-top: 30px;
-		margin-bottom: 30px;
 	}
 
 	.viewport-section-2 {
@@ -1015,6 +1037,11 @@ link-style{
 
 	.tall-height {
 		padding-bottom: 30px;
+	}
+
+	.waterfall {
+		bottom: 72px;
+		top: auto;
 	}
 
 	.drawing, .painting, .illustration {
@@ -1213,6 +1240,10 @@ link-style{
 		grid-template-rows: minmax(220px, 2.2fr) minmax(50px, .5fr);
 	}
 
+	.comic-grid {
+		grid-template-rows: minmax(120px, 1.2fr) minmax(220px, 2.2fr)
+	}
+
 	.img-description-container{
 		margin-left: 150px;
 		max-height: 200vh;
@@ -1249,6 +1280,10 @@ link-style{
 
 	.packaging-text {
 		padding-top: 30px;
+	}
+
+	.comic-grid {
+		grid-template-rows: minmax(90px, 0.9fr) minmax(230px, 2.3fr);
 	}
 
 	h2 {
