@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Artist, illustrator, designer, writer, developer, and overall creative person. Just your average art school dropout with a math degree."/>
 	<title>Neema Samawi</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	<link rel="icon" href="images/icon_circle-01.png"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -191,30 +192,32 @@
 		</section>
 		<section id="painting">
 			<h2>Painting</h2>
-			<div class="grid-container painting-grid">
-				<div class="grid-item">
-					<a href="./wine">
-						<img src="images/wine_1.jpg" alt="Painting of two wine bottles and two wine glasses: Wine Series." class="cover three-by-four"/>
-						<div class="title">
-							<div class="text-black">Wine #1</div>
-						</div>
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="./wine">
-						<img src="images/wine_2.jpg" alt="Painting of row of wine bottles: Wine Series." class="cover three-by-four"/>
-						<div class="title">
-							<div class="text-black">Wine #2</div>
-						</div>
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="./wine">
-						<img src="images/wine_3.jpg" alt="Painting of three wine glasses: Wine Series." class="cover three-by-four"/>
-						<div class="title">
-							<div class="text-black">Wine #3</div>
-						</div>
-					</a>
+			<div class="container-fluid indented">
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-6 col-lg-4">
+						<a href="./wine">
+							<img src="images/wine_1.jpg" alt="Painting of two wine bottles and two wine glasses: Wine Series." class="three-by-four"/>
+							<div class="title">
+								<div class="text-black">Wine #1</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<a href="./wine">
+							<img src="images/wine_2.jpg" alt="Painting of row of wine bottles: Wine Series." class="three-by-four"/>
+							<div class="title">
+								<div class="text-black">Wine #2</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<a href="./wine">
+							<img src="images/wine_3.jpg" alt="Painting of three wine glasses: Wine Series." class="three-by-four"/>
+							<div class="title">
+								<div class="text-black">Wine #3</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="footer">
@@ -224,6 +227,7 @@
 		<!--</div>-->
 	</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 	<script>
 	$(function() {
 		$("#main-link").on('click', function() {
