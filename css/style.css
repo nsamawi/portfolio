@@ -210,13 +210,13 @@ link-style{
 	font-weight: 300;
 	font-size: 15px;
 	width: 85%;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 .description-float {
 	font-weight: 300;
 	font-size: 14.5px;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 .cover, .three-by-four, .glow-img, .single-image, .full-height {
@@ -461,12 +461,6 @@ link-style{
 	width: 100vw;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 
 @media (min-height: 1000px) {
 	#main-covers {
@@ -580,12 +574,6 @@ link-style{
 		max-width: 300px;
 	}
 
-	.single-figure {
-		float: none;
-		width: 80%;
-		margin-right: 0;
-	}
-
 	body {
 		width: 100vw;
 	}
@@ -679,16 +667,8 @@ link-style{
 		max-height: none;
 	}
 
-	.final-paragraph {
-		padding-bottom: 30px;
-	}
-
 	.description-float {
 		width: 100%;
-	}
-
-	.single-figure {
-		width: 60%;
 	}
 
 	.still-life-text {
@@ -709,27 +689,4 @@ link-style{
 		width: 100%;
 	}
 
-}
-
-@media (max-width: 800px)
-	and (min-width: 426px){
-
-	.single-figure {
-		float: none;
-		width: 50%;
-		max-height: 200vh;
-	}
-
-	.description {
-		padding-bottom: 50px;
-	}
-
-}
-
-@media (max-width: 425px)
-	and (min-height: 426px) {
-
-	h2 {
-		font-size: 30px;
-	}
 }
