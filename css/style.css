@@ -120,6 +120,10 @@ link-style{
 	color: #794949;
 }
 
+.illustration, .drawing, .painting {
+	padding-bottom: 30px;
+}
+
 .sidenav {
 	height: 100%; /* 100% Full-height */
 	width: 0; /* 0 width - change this with JavaScript */
@@ -186,11 +190,7 @@ link-style{
 
 .description-float {
 	font-weight: 300;
-	font-size: 15px;
-	width: 85%;
-	max-width: 75vw;
-	position: relative;
-	margin-right: 25px;
+	font-size: 14.5px;
 	margin-bottom: 25px;
 }
 
@@ -287,6 +287,10 @@ link-style{
 	height: auto;
 	object-fit: contain;
 	object-position: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	max-height: 530px;
+	max-width: 400px;
 }
 
 .single-image-grid {
@@ -336,6 +340,13 @@ link-style{
 	object-position: left;
 }
 
+.tall {
+	max-height: 495px;
+	max-width: none;
+	margin-bottom: 60px;
+	bottom: 0;
+}
+
 .square {
 	max-width: 300px;
 }
@@ -347,7 +358,7 @@ link-style{
 .three-by-four {
 	max-height: 500px;
 	max-width: 375px;
-	width: 95%;
+	width: 100%;
 	height: auto;
 	object-fit: contain;
 	object-position: left;
@@ -379,7 +390,8 @@ link-style{
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	max-height: 1200px;
+	max-height: 2000px;
+	margin-bottom: 10px;
 }
 
 .grid-item {
@@ -732,7 +744,6 @@ link-style{
 
 	.tall-height{
 		max-height: 880px;
-		margin-top: 110px;
 	}
 
 	.painting-grid {
