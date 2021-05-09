@@ -334,12 +334,14 @@ link-style{
 	height: auto;
 	object-fit: contain;
 	object-position: left;
-	margin-top: 12px;
-	margin-bottom: 12px;
 }
 
 .square {
 	max-width: 300px;
+}
+
+.preview {
+	margin-bottom: 24px;
 }
 
 .three-by-four {
