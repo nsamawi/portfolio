@@ -83,6 +83,43 @@ link-style{
 	text-decoration: none;
 }
 
+#main-covers, #illustration, #drawing, #painting {
+	display: block;
+	position: relative;
+	min-height: 100vh;
+	width: 100vw;
+	padding-bottom: 20px;
+}
+
+#illustration {
+	background-color: seashell;
+}
+
+#drawing {
+	background-color: ghostwhite;
+}
+
+#painting {
+	background-color: floralwhite;
+	padding-bottom: 50px;
+}
+
+#painting h2{
+	color: #A16363;
+}
+
+#illustration-link:hover{
+	color: #AD0017;
+}
+
+#drawing-link:hover{
+	color: #065789;
+}
+
+#painting-link:hover{
+	color: #794949;
+}
+
 .sidenav {
 	height: 100%; /* 100% Full-height */
 	width: 0; /* 0 width - change this with JavaScript */
@@ -132,7 +169,9 @@ link-style{
 
 .indented {
 	padding-left: 150px;
+	padding-right: 50px;
 	margin: 0;
+	padding-bottom: 0px;
 }
 
 .description {
@@ -290,19 +329,28 @@ link-style{
 
 .cover {
 	max-height: 300px;
+	max-width: 400px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	object-fit: contain;
 	object-position: left;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.square {
+	max-width: 300px;
 }
 
 .three-by-four {
-	max-width: 400px;
-	width: 85%;
+	max-height: 500px;
+	max-width: 375px;
+	width: 95%;
 	height: auto;
 	object-fit: contain;
 	object-position: left;
 	margin-bottom: 10px;
+	margin-right: 10px;
 }
 
 .full-height {
@@ -336,6 +384,10 @@ link-style{
 	position: relative;
 }
 
+.overlay {
+	position: relative;
+}
+
 .grid-figure {
 	position: relative;
 	width: 100%;
@@ -343,8 +395,21 @@ link-style{
 	object-fit: cover;
 }
 
-.grid-item:hover .cover {
+.grid-item:hover .cover-img {
 	opacity: 0.2;
+}
+
+.overlay:hover .three-by-four {
+	opacity: 0.2;
+}
+
+.overlay:hover .cover {
+	opacity: 0.2;
+}
+
+.overlay:hover .title {
+	transition: .7s ease;
+	opacity: 1;
 }
 
 .grid-item p {
@@ -352,28 +417,28 @@ link-style{
 	margin: 0;
 }
 
-.grid-item:hover .light {
+.overlay:hover .light {
 	opacity: 0.12;
 }
 
-.grid-item:hover .medium {
+.overlay:hover .medium {
 	opacity: 0.4 ;
 }
 
-.grid-item:hover .dark {
+.overlay:hover .dark {
 	opacity: 0.6 ;
 }
 
-.grid-item:hover .extra-dark {
+.goverlay:hover .extra-dark {
 	opacity: 0.8 ;
 }
 
-.grid-item:hover .title {
+.overlay:hover .title {
 	transition: .7s ease;
 	opacity: 1;
 }
 
-.grid-item:hover .dramatic {
+.overlay:hover .dramatic {
 	transition: 1.6s ease;
 	opacity: 1;
 }
@@ -428,6 +493,10 @@ link-style{
 }
 
 .myImg:hover {
+	opacity: 0.2;
+}
+
+.three-by-four:hover {
 	opacity: 0.2;
 }
 
@@ -493,21 +562,6 @@ link-style{
 	min-height: 100vh;
 }
 
-#main-covers{
-	display: block;
-	position: relative;
-	min-height: 100vh;
-	width: 100vw;
-}
-
-#illustration {
-	display: block;
-	background-color: seashell;
-	position: relative;
-	min-width: 100vw;
-	min-height: 100vh;
-}
-
 .long-page {
 	display: block;
 	background-color: seashell;
@@ -548,17 +602,6 @@ link-style{
   position: absolute;
 }
 
-#drawing {
-	top: 0px;
-	width: 100%;
-	display: block;
-	background-color: ghostwhite;
-	position: relative;
-	min-height: 100vh;
-	min-width: 100vw;
-	scroll-snap-align: start;
-}
-
 .drawing h2{
 	color: #0975B9;
 	/*background-color: #818181;*/
@@ -577,32 +620,10 @@ link-style{
 	width: 100vw;
 }
 
-#painting {
-	display: block;
-	position: relative;
-	background-color: floralwhite;
-	min-height: 100vh;
-	width: 100vw;
-}
 
-#painting h2{
-	color: #A16363;
-}
 
 .painting h2{
 	color: #A16363;
-}
-
-#illustration-link:hover{
-	color: #AD0017;
-}
-
-#drawing-link:hover{
-	color: #065789;
-}
-
-#painting-link:hover{
-	color: #794949;
 }
 
 #profile{
@@ -815,11 +836,11 @@ link-style{
 	}
 
 	#painting{
-		max-height: 200vh;
+		max-height: none;
 	}
 
 	#drawing{
-		max-height: 200vh;
+		max-height: none;
 	}
 
 	h1{
@@ -1008,20 +1029,20 @@ link-style{
 	}
 
 	#illustration {
-		max-height: 800vh;
+		max-height: none;
 		width: 100vw;
 		max-width: 425px;
 	}
 
 	#drawing {
-		max-height: 300vh;
+		max-height: none;
 		width: 100vw;
 		max-width: 425px;
 	}
 
 	#painting {
 		width: 100vw;
-		max-height: 300vh;
+		max-height: none;
 		padding-bottom: 30px;
 	}
 
@@ -1063,7 +1084,7 @@ link-style{
 
 	.drawing, .painting, .illustration {
 		min-height: 100vh;
-		max-height: 800vh;
+		max-height: none;
 		padding-bottom: 30px;
 	}
 
@@ -1096,11 +1117,11 @@ link-style{
 @media (max-height: 425px) {
 
 	#drawing{
-		max-height: 400vh;
+		max-height: none;
 	}
 
 	#painting{
-		max-height: 500vh;
+		max-height: none;
 		padding-bottom: 50px;
 	}
 
@@ -1221,7 +1242,7 @@ link-style{
 
 	.drawing, .painting, .illustration {
 		min-height: 100vh;
-		max-height: 800vh;
+		max-height: none;
 		padding-bottom: 30px;
 	}
 
