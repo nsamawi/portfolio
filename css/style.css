@@ -81,7 +81,7 @@ link-style{
 	text-decoration: none;
 }
 
-#main-covers, #illustration, #drawing, #painting {
+#main-covers, #illustration, #drawing, #art {
 	display: block;
 	position: relative;
 	min-height: 100vh;
@@ -97,7 +97,7 @@ link-style{
 	background-color: ghostwhite;
 }
 
-#painting {
+#art {
 	background-color: floralwhite;
 	padding-bottom: 50px;
 }
@@ -106,7 +106,7 @@ link-style{
 	color: #0975B9;
 }
 
-#painting h2 {
+#art h2 {
 	color: #A16363;
 }
 
@@ -119,11 +119,11 @@ link-style{
 	color: #065789;
 }
 
-#painting-link:hover {
+#art-link:hover {
 	color: #794949;
 }
 
-.illustration, .drawing, .painting {
+.illustration, .drawing, .art {
 	display: block;
 	position: relative;
 	min-height: 100vh;
@@ -140,7 +140,7 @@ link-style{
 	background-color: ghostwhite;
 }
 
-.painting {
+.art {
 	background-color: floralwhite;
 }
 
@@ -148,7 +148,7 @@ link-style{
 	color: #0975B9;
 }
 
-.painting h2 {
+.art h2 {
 	color: #A16363;
 }
 
@@ -609,12 +609,12 @@ link-style{
 			padding-bottom: 10px;
 	}
 
-	#main-covers, #illustration, #drawing, #painting {
+	#main-covers, #illustration, #drawing, #art {
 		width: 100vw;
 		max-width: 425px;
 	}
 
-	#painting {
+	#art {
 		padding-bottom: 30px;
 	}
 

@@ -24,7 +24,7 @@
 			</a>
 			<div class="sidebar-links">
 				<a id="illustration-link" href="#illustration">Illustration</a>
-				<a id="painting-link" href="#painting">Art</a>
+				<a id="art-link" href="#art">Art</a>
 				<a id="drawing-link" href="https://www.etsy.com/shop/artbyneema" target="_blank">Prints</a>
 				<a href="./about">About</a>
 			</div>
@@ -174,7 +174,7 @@
 			</div>
 		</section>
 		-->
-		<section id="painting">
+		<section id="art">
 			<h2>Art</h2>
 			<div class="container-fluid indented">
 				<div class="row justify-content-start">
@@ -262,8 +262,8 @@
 	});
 
 	$(function() {
-		$("#painting-link").on('click', function() {
-			var position = $("#painting").offset().top;
+		$("#art-link").on('click', function() {
+			var position = $("#art").offset().top;
 			$("HTML, BODY").animate({
 				scrollTop: position
 			}, 750);
@@ -271,8 +271,8 @@
 	});
 
 	$(function() {
-		$("#painting-preview").on('click', function() {
-			var position = $("#painting").offset().top;
+		$("#art-preview").on('click', function() {
+			var position = $("#art").offset().top;
 			$("HTML, BODY").animate({
 				scrollTop: position
 			}, 750);
