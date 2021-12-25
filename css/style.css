@@ -35,7 +35,7 @@ h1{
 
 h2{
 	font-weight: 300;
-	font-size: 50px;
+	font-size: 35px;
 	line-height: 100px;
 	padding-left: 150px;
 	position: relative;
@@ -185,9 +185,9 @@ link-style{
 
 .sidebar-links a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
-  line-height: 36px;
+  line-height: 30px;
 	padding-bottom: 10px;
   color: #818181;
   display: block;
@@ -443,6 +443,7 @@ link-style{
 }
 
 #about-me {
+	font-weight: 400;
 	position: relative;
 	display: block;
 	margin-left: auto;
