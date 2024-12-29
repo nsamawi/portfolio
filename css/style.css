@@ -32,14 +32,16 @@ h1{
 	top: 20px;
 	width: 100%;
 	padding-top: 10px;
+	padding-left: 12vw;
+	padding-right: 4vw;
 }
 
 h2{
 	font-weight: 300;
 	font-size: 35px;
 	line-height: 100px;
-	padding-left: 10vw;
 	padding-top: 10px;
+	padding-left: 12vw;
 	position: relative;
 	color: #E0001E;
 	width: 100%;
@@ -226,9 +228,9 @@ link-style{
 
 .sidebar-links a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
-  line-height: 32px;
+  line-height: 30px;
 	padding-left: 10px;
 	padding-bottom: 10px;
   color: #818181;
@@ -240,7 +242,7 @@ link-style{
 }
 
 .indented {
-	padding-left: 10vw;
+	padding-left: 12vw;
 	padding-right: 2vw;
 	padding-top: 10px;
 	margin: 0;
